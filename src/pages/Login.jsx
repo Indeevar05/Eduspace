@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { Wand2 } from 'lucide-react';
+import { Wand2, ArrowLeft } from 'lucide-react';
 import Button from '../components/Button';
 import InputField from '../components/InputField';
 
@@ -49,6 +49,14 @@ const Login = () => {
     <>
       <div className="page-wrapper">
         <div className="page-container">
+          <button 
+            type="button"
+            onClick={() => navigate('/')}
+            style={{ background: 'transparent', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px', color: '#1D2226', opacity: '0.7', fontWeight: '500', marginBottom: '15px', padding: 0, fontSize: '14px' }}
+          >
+            <ArrowLeft size={16} />
+            Back
+          </button>
           <h1 className="heading-title">Signin to your<br />PopX account</h1>
           <p className="sub-text">Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit,</p>
 

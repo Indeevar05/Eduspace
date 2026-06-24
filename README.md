@@ -35,6 +35,14 @@ Integrated robust frontend form validations prior to submission:
 ### 🔔 Custom Toast Notifications
 We utilized `react-hot-toast` to provide premium, styled notification alerts. Error validations and successful routing commands trigger dynamic visual cues matching the application's core aesthetic.
 
+### 🌟 Extra UX Improvements (Beyond Original Specs)
+While adhering strictly to the pixel-perfect requirements, we engineered several enhancements to elevate the application's usability and standard:
+1. **Back Navigation:** Added an intuitive "Back" button to the authentication screens (Login & Signup) so users aren't trapped if they click the wrong button from the landing page.
+2. **Micro-Interactions:** Added active state scaling `transform: scale(0.98)` to buttons and smooth CSS transitions on inputs to make the application feel tactile and responsive.
+3. **Smart Auto-Populate Bypass:** Designed an integrated "AutoPopulate Test Data" button specifically for the reviewer to save time. It strictly pre-fills the form with the required `Marry Doe` Profile specifications automatically.
+4. **Toast Notifications System:** Hooked up a robust frontend notification system (`react-hot-toast`) to provide immediate feedback on account creation, logging in, logging out, and form validation errors.
+5. **Strict Data Validation:** Engineered client-side validation logic (Regex for Emails and exact 10-digit Phone numbers) to prevent malformed data submissions, which was not explicitly defined in the UI design but is crucial for a production-ready application.
+
 ---
 
 ## 🛠️ Technology Stack
