@@ -96,7 +96,7 @@ graph TD
 
 #### Ensure the browser is pointed to http://localhost:5173 to view the application.
 
-## 📱 Usage Guide: 
+## 📱 Smart Feautures: 
 
 **• Viewport Mode: Use the top toolbar to explicitly toggle between Mobile, Tablet, and Desktop views to verify structural integrity.**
 
@@ -105,6 +105,8 @@ graph TD
 **• Authentication Flow: Attempt to submit invalid formats (like a 9-digit phone number) to trigger the strict form validations, then use valid data to seamlessly route to the Profile.**
 
 **• Profile: Interact with the mock camera upload button and verify the mocked User Session data.**
+
+**. Toast Notifications: Experience the Toast Notifications just to inform you that you did Right!**
 
 ## 🛡️ Developer Notes:
 **• Styling Approach: All component styles are co-located alongside their `.jsx` files (e.g., `Button.css`, `InputField.css`) to enforce component-level scoping without resorting to CSS-in-JS.**
