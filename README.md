@@ -1,7 +1,6 @@
 ![React](https://img.shields.io/badge/React-18.0-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?logo=vite&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-Hosting-000000?logo=vercel&logoColor=white)
 
 # 📱 PopX: Pixel-Perfect Mobile UI Engine
 
