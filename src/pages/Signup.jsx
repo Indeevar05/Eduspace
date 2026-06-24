@@ -57,12 +57,12 @@ const Signup = () => {
 
   const handleAutoFill = () => {
     setFormData({
-      fullName: 'Jane Smith',
+      fullName: 'Marry Doe',
       phone: '9876543210',
-      email: 'jane.smith@popx.com',
-      password: 'superSecretPassword',
+      email: 'Marry@Gmail.Com',
+      password: 'password123',
       company: 'PopX Tech',
-      isAgency: 'no'
+      isAgency: 'yes'
     });
     toast('Form auto-filled!', { icon: '✨' });
   };

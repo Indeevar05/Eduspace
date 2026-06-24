@@ -37,8 +37,8 @@ const Login = () => {
 
   const handleAutoFill = () => {
     setFormData({
-      email: 'tester@popx.com',
-      password: 'securePassword123'
+      email: 'Marry@Gmail.Com',
+      password: 'password123'
     });
     toast('Form auto-filled!', { icon: '✨' });
   };
