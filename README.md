@@ -1,90 +1,122 @@
-# PopX Mobile App 🚀
+![React](https://img.shields.io/badge/React-18.0-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-Hosting-000000?logo=vercel&logoColor=white)
 
-Welcome to the **PopX Mobile App** frontend assessment! This project is a pixel-perfect React JS application engineered strictly based on the provided Adobe XD design specifications.
+# 📱 PopX: Pixel-Perfect Mobile UI Engine
 
-## 🔗 Live Demo
-*Assuming your Vercel is connected, insert your live demo link here:*
-[**Live Application Link**](https://popx-app-ten-steel.vercel.app/)
-
----
-
-## ✨ Key Features & Enhancements
-
-### 🎨 Pixel-Perfect UI Design
-- The application perfectly mirrors the Adobe XD constraints, ensuring an identical user experience.
-- Strict adherence to the `Rubik` Google font and extracted exact HEX codes for the brand purple (`#6C25FF`), error red (`#DD4A3D`), and other core typography parameters.
-- **Custom Form Fields:** Developed complex floating cut-out labels that seamlessly transition color on active focus states.
-- **Micro-Interactions:** Included subtle hover animations, active scaling on buttons, and stylized custom radio inputs replacing standard browser defaults.
-
-### 📱 Integrated Viewport Testing Suite
-To facilitate rapid testing for reviewers, the application includes a **global viewport selector toolbar** at the top of the interface. This instantly constrains the application wrapper, allowing reviewers to verify responsiveness seamlessly:
-- **Mobile View (375px):** Mimics standard mobile dimensions with a fluid edge-to-edge layout matching the design.
-- **Tablet View (768px):** Constrains the view for mid-sized devices.
-- **Responsive View:** Transforms the application into a beautifully elevated, bordered card to provide a luxurious "app-in-browser" desktop experience.
-
-### ⚡ Rapid Testing Auto-Populate
-A convenient "Auto-Populate" feature has been built directly into the Login and Signup flows. Clicking this button instantly injects predefined dummy data into the forms (specifically matching the `Marry Doe` Profile specifications) to bypass manual typing during the evaluation process.
-
-### 🛡️ Strict Frontend Validation
-Integrated robust frontend form validations prior to submission:
-- **Email:** Standard formatting checks using Regular Expressions.
-- **Phone Number:** Validated to strictly accept 10-digit numerical structures.
-- **Password:** Constrained to a minimum of 6 characters.
-- **Full Name:** Minimum 3 character restriction.
-
-### 🔔 Custom Toast Notifications
-We utilized `react-hot-toast` to provide premium, styled notification alerts. Error validations and successful routing commands trigger dynamic visual cues matching the application's core aesthetic.
-
-### 🌟 Extra UX Improvements (Beyond Original Specs)
-While adhering strictly to the pixel-perfect requirements, we engineered several enhancements to elevate the application's usability and standard:
-1. **Back Navigation:** Added an intuitive "Back" button to the authentication screens (Login & Signup) so users aren't trapped if they click the wrong button from the landing page.
-2. **Micro-Interactions:** Added active state scaling `transform: scale(0.98)` to buttons and smooth CSS transitions on inputs to make the application feel tactile and responsive.
-3. **Smart Auto-Populate Bypass:** Designed an integrated "AutoPopulate Test Data" button specifically for the reviewer to save time. It strictly pre-fills the form with the required `Marry Doe` Profile specifications automatically.
-4. **Toast Notifications System:** Hooked up a robust frontend notification system (`react-hot-toast`) to provide immediate feedback on account creation, logging in, logging out, and form validation errors.
-5. **Strict Data Validation:** Engineered client-side validation logic (Regex for Emails and exact 10-digit Phone numbers) to prevent malformed data submissions, which was not explicitly defined in the UI design but is crucial for a production-ready application.
+An enterprise-grade, responsive frontend interface designed to handle pixel-perfect UI replication, strict form validations, and user onboarding flows. Built with **React** and **Vite**, and styled strictly using pure CSS to enforce absolute layout precision.
 
 ---
 
-## 🛠️ Technology Stack
-- **Framework:** React 18 (Bootstrapped with Vite)
-- **Routing:** React Router v6
-- **Styling:** Pure CSS (CSS Custom Properties/Variables) - No external heavy CSS frameworks were utilized to ensure maximum control over the pixel-perfect requirements.
-- **Icons:** Lucide React
-- **Notifications:** React Hot Toast
+## 🚀 Overview
+PopX is an assessment project demonstrating the ability to translate static Adobe XD designs into dynamic, flawless web applications. It goes beyond a simple static page, acting as a robust frontend engine with stateful interactions, testing utilities, and dynamic viewport rendering.
+
+### Core Intelligence
+- **Fluid Viewport Architecture**: Dynamically shifts between a full-bleed mobile application view and a beautifully bordered floating desktop card based on the current user device.
+- **Strict Human-in-the-Loop Validation**: Enforces rigorous client-side checks for Email structures, 10-digit Phone formats, and secure Password lengths before permitting submission.
+- **Smart Developer Bypass**: A built-in "AutoPopulate Test Data" engine that allows reviewers to instantly fill the forms with correct dummy data (`Marry Doe`), bypassing manual entry entirely.
 
 ---
 
-## ⚙️ Local Installation & Setup
+## ✨ Key Functionalities
 
-If you would like to run the application locally on your machine, follow these steps:
+### 1. Pixel-Perfect UX Replication
+- **Design System Native**: Accurately maps the Adobe XD specifications to exact HEX codes, layout margins, and the `Rubik` font family.
+- **Micro-Interactions**: Custom radio buttons, floating input labels with focus-state color transitions, and tactile button scaling `transform: scale(0.98)` for a premium feel.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Indeevar05/Eduspace.git
-   cd Eduspace
-   ```
+### 2. High-Performance Architecture
+- **Vite Build Engine**: Utilizes Vite for lightning-fast HMR (Hot Module Replacement) during development and highly optimized minified bundles for production.
+- **Zero Heavy CSS Frameworks**: Built entirely using pure Vanilla CSS Custom Variables for maximum performance, overriding default browser styles without bloated external libraries.
 
-2. **Install the dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **View the Application:**
-   Open your browser and navigate to `http://localhost:5173`
+### 3. Adaptive Intelligence
+- **Viewport Testing Suite**: A custom floating toolbar built into the top of the UI that allows reviewers to instantly force the application into `Mobile (375px)`, `Tablet (768px)`, or `Responsive` mode.
+- **Feedback Loop**: Integrated `react-hot-toast` to provide instant, stylish visual cues for errors, successes, and auto-fills.
 
 ---
 
-## 🧭 Application Flow
-1. **Landing Page (`/`):** The initial entry point prompting users to either Create an Account or Login.
-2. **Signup Page (`/signup`):** Collects comprehensive user data with strict validation checks. Success redirects to the Profile dashboard.
-3. **Login Page (`/login`):** Standard authentication portal. Success redirects to the Profile dashboard.
-4. **Profile Page (`/profile`):** Displays user data (Marry Doe) with a mock camera upload functionality and a secure logout feature.
+## 🏗️ System Architecture
+
+PopX strictly isolates routing, validation logic, and styling constraints.
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'fontFamily': 'Inter, sans-serif', 'background': 'transparent', 'lineColor': '#64748b'}}}%%
+graph TD
+    classDef frontend fill:#1e3a8a,stroke:#3b82f6,stroke-width:2px,color:#eff6ff,rx:8px,shadow:true;
+    classDef core fill:#4c1d95,stroke:#8b5cf6,stroke-width:2px,color:#f5f3ff,rx:8px,shadow:true;
+    classDef ext fill:#7f1d1d,stroke:#ef4444,stroke-width:2px,color:#fef2f2,rx:8px,shadow:true;
+    classDef cluster fill:transparent,stroke:#334155,stroke-width:2px,rx:12px,stroke-dasharray: 5 5;
+
+    subgraph UserLayer [Viewport Layer]
+        UI[📱 Viewport Controller Toolbar]:::frontend
+    end
+
+    subgraph ApplicationCore [Application Core]
+        Router[🔀 React Router DOM]:::core
+        Forms[📝 Validation Engine]:::core
+        Toast[🔔 Toast Notification State]:::core
+    end
+
+    subgraph Components [Reusable UI Components]
+        Btn[🔘 Button Variants]:::ext
+        Input[⌨️ Floating Input Fields]:::ext
+        Radio[🔘 Custom Radio Group]:::ext
+    end
+
+    UI -->|Injects Width State| Router
+    Router -->|Renders Active Route| Forms
+    Forms -->|Triggers Feedback| Toast
+    Forms -->|Constructs UI| Btn
+    Forms -->|Constructs UI| Input
+    Forms -->|Constructs UI| Radio
+
+    class UserLayer,ApplicationCore,Components cluster;
+```
+
+## 🛠️ Setup & Installation
+## Prerequisites
+
+**• Node.js (v18+)**
+
+**• Git CLI**
+
+## 1. Local Setup
+
+**Clone the repository and navigate to the root directory.**
+
+### a) Clone the Repo
+**git clone https://github.com/Indeevar05/Eduspace.git**
+**cd Eduspace**
+
+### b) Install dependencies
+**npm install**
+
+### c) Launch the Development Server:
+**npm run dev**
+
+#### Ensure the browser is pointed to http://localhost:5173 to view the application.
+
+## 📱 Usage Guide: 
+
+**• Viewport Mode: Use the top toolbar to explicitly toggle between Mobile, Tablet, and Desktop views to verify structural integrity.**
+
+**• Auto-Fill: Click the magical "Click to AutoPopulate Test Data" button above the auth forms to instantly bypass manual data entry.**
+
+**• Authentication Flow: Attempt to submit invalid formats (like a 9-digit phone number) to trigger the strict form validations, then use valid data to seamlessly route to the Profile.**
+
+**• Profile: Interact with the mock camera upload button and verify the mocked User Session data.**
+
+## 🛡️ Developer Notes:
+**• Styling Approach: All component styles are co-located alongside their `.jsx` files (e.g., `Button.css`, `InputField.css`) to enforce component-level scoping without resorting to CSS-in-JS.**
+
+**• Routing: `BrowserRouter` handles all routing logic flawlessly without page reloads.**
 
 ---
 
-*This project was meticulously developed to showcase precision in UI development, responsive architecture, and a streamlined user experience.*
+## 👤 Author
+
+### Indeevarashyam Mahanthi
+
+### 📧 indeevarmsv@gmail.com
+
+### 📁 Project: PopX Assignment Submission
