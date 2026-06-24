@@ -73,6 +73,15 @@ const Signup = () => {
         <div className="page-container">
           <h1 className="heading-title">Create your<br />PopX account</h1>
 
+          <button 
+            type="button" 
+            onClick={handleAutoFill}
+            style={{ backgroundColor: '#f3e8ff', color: '#6C25FF', padding: '10px 14px', borderRadius: '6px', border: '1px dashed #6C25FF', fontSize: '13px', cursor: 'pointer', marginTop: '15px', textAlign: 'left', display: 'flex', alignItems: 'center', gap: '8px' }}
+          >
+            <Wand2 size={16} />
+            Click to AutoPopulate the fields so that the time saves for testing
+          </button>
+
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', flex: 1, marginTop: '20px' }}>
             <InputField
               label="Full Name"
@@ -137,12 +146,6 @@ const Signup = () => {
           </form>
         </div>
       </div>
-
-      {/* Autofill Button outside the main container */}
-      <button className="autofill-fab" onClick={handleAutoFill} title="Auto Fill Form">
-        <Wand2 size={18} />
-        Auto Fill
-      </button>
     </>
   );
 };
