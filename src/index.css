@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+:root {
+  --color-primary: #6C25FF;
+  --color-primary-light: #CEBAFB;
+  --color-text-dark: #1D2226;
+  --color-text-light: #919191;
+  --color-error: #DD4A3D;
+  --color-disabled: #CBCBCB;
+  --color-bg: #F7F8F9;
+  --color-white: #FFFFFF;
+  --color-border: #CBCBCB;
+  
+  --font-family: 'Rubik', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-bg);
+}
+
+.page-container {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  transition: all 0.3s ease;
+}
+
+/* Adjust for larger screens to look peak */
+@media (min-width: 600px) {
+  .page-container {
+    background-color: var(--color-white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 599px) {
+  .page-wrapper {
+    padding: 0;
+    align-items: stretch;
+  }
+  .page-container {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 30px 20px;
+    background-color: var(--color-bg);
+  }
+}
+
+.heading-title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.sub-text {
+  font-size: 18px;
+  color: var(--color-text-dark);
+  opacity: 0.6;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.bottom-button-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
+}

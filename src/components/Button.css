@@ -1,0 +1,42 @@
+.popx-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 6px;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popx-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.popx-btn:disabled {
+  background-color: var(--color-disabled);
+  color: var(--color-white);
+  cursor: not-allowed;
+}
+
+.popx-btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.popx-btn-primary:hover:not(:disabled) {
+  background-color: #5b1de0;
+}
+
+.popx-btn-secondary {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-dark);
+}
+
+.popx-btn-secondary:hover:not(:disabled) {
+  background-color: #bfa5fa;
+}
