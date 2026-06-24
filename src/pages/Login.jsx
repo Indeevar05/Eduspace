@@ -58,7 +58,7 @@ const Login = () => {
             style={{ backgroundColor: '#f3e8ff', color: '#6C25FF', padding: '10px 14px', borderRadius: '6px', border: '1px dashed #6C25FF', fontSize: '13px', cursor: 'pointer', marginBottom: '20px', textAlign: 'left', display: 'flex', alignItems: 'center', gap: '8px' }}
           >
             <Wand2 size={16} />
-            Click here to AutoPopulate the fields. Just a smart Bypass..
+            Click to AutoPopulate Test Data
           </button>
 
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
